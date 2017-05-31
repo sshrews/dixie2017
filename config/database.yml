@@ -3,13 +3,13 @@ development:
   encoding: unicode
   database:
   pool: 5
-  username: dixie2017
-  password: dixie2017
+  username: postgres
+  password: postgres
 
 test:
   adapter: postgresql
   encoding: unicode
   database:
   pool: 5
-  username: dixie2017
-  password: dixie2017
+  username: postgres
+  password: postgres
