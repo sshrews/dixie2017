@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse" style="background-color: #333; border-style: solid; border-color: #444; margin-bottom: 0;" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color: white; font-size: 14px;" href="#"><b>LIVE MUSIC.</b> <span style="color: #aaa; font-size: 14px;"> EVERY NIGHT.</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "HOME", root_path %></li>
+        <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "ABOUT", about_path %></li>
+        <li class="<%= 'active' if current_page?(food_path) %>"><%= link_to "FOOD", food_path %></li>
+        <li class="<%= 'active' if current_page?(shows_path) %>"><%= link_to "SHOWS", shows_path %></li>
+        <!--li class="active"><%= link_to "Home", root_path %></li >
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Food", food_path %></li>
+        <li><%= link_to "Shows", shows_path %></li -->
+      </ul>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

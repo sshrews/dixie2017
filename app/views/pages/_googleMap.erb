@@ -1,0 +1,16 @@
+<div id="googleMap" class="map"></div>
+  <script>
+  function initMap() {
+  var dixie = {lat: 33.904428, lng: -84.486196};
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
+    zoom: 14,
+    center: dixie
+  });
+  var marker = new google.maps.Marker({
+    position: dixie,
+    map: map
+    });
+  }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQmtFDUSONJDTJ9ikiXydyVCzdevFqPvk&callback=initMap"></script>
+</div>

@@ -1,0 +1,86 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #070909;
+  color: #eeeeee;
+}
+
+.banner {
+  background: linear-gradient(
+                       rgba(20,20,20, .5),
+                       rgba(20,20,20, .5)),
+                       url(banner.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  width: 100%;
+  height: 600px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 142px;
+  border: solid 1px #444;
+}
+
+.footer {
+  width: 100%;
+  height: 44px;
+  //background-color: #202025;
+  background-color: #333;
+  border: solid 1px #444;
+  color: #cccccc;
+  font-size: 12px;
+  text-align: center;
+}
+//------------------------------------------------------------------------------
+// THREE SHOWS ON FRONT PAGE
+//------------------------------------------------------------------------------
+
+.bandTitle {
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.showDate {
+  text-align: center;
+
+}
+
+.bandPhoto {
+  text-align: center;
+
+}
+
+.bandCover {
+  text-align: center;
+  font-size: 16px;
+
+}
+
+//------------------------------------------------------------------------------
+// DIRECTIONS AND CONTACT INFO
+//------------------------------------------------------------------------------
+
+.contactInfo {
+  color: #bbb;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #333;
+  padding-bottom: 12px;
+
+
+}
+
+.map {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #222;
+
+}
+
+.social {
+  padding-top: 10px;
+
+}
