@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :artists
 root 'pages#home'
 
 get 'home' => "pages#home", as: :home
