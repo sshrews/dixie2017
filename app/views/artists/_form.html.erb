@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+<table>
+
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :artist_name %>
@@ -31,7 +33,7 @@
     <%= form.text_field :genre, id: :artist_genre %>
   </div>
 
-  <div class="actions">
+  <div class="actions" style="color: black;">
     <%= form.submit %>
   </div>
 <% end %>
