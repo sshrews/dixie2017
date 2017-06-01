@@ -6,6 +6,9 @@
 </div>
 
 
+<% @diddly = Artist.where(genre: 'Rockabilly').pluck(:name, :genre) %>
+<%= @diddly[0] %><br />
+<%= @diddly.join() %>
 
 <div class="container">
   <!-- Example row of columns -->

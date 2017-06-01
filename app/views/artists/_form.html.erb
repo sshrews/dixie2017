@@ -11,29 +11,34 @@
     </div>
   <% end %>
 
-<table>
+<table class="table table-hover">
+  <!-- div class="field" -->
+  <tr>
+    <td><%= form.label :name %></td>
+    <td><%= form.text_field :name, id: :artist_name %></td>
+  <!-- /div -->
+  </tr>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :artist_name %>
-  </div>
+  <tr>
+  <!-- div class="field" -->
+    <td><%= form.label :icon %></td>
+    <td><%= form.text_field :icon, id: :artist_icon %></td>
+  <!-- /div -->
+  </tr>
 
-  <div class="field">
-    <%= form.label :icon %>
-    <%= form.text_field :icon, id: :artist_icon %>
-  </div>
+  <tr>
+    <td><%= form.label :website %></td>
+    <td><%= form.text_field :website, id: :artist_website %></td>
+  </tr>
 
-  <div class="field">
-    <%= form.label :website %>
-    <%= form.text_field :website, id: :artist_website %>
-  </div>
-
-  <div class="field">
-    <%= form.label :genre %>
-    <%= form.text_field :genre, id: :artist_genre %>
-  </div>
+  <tr>
+    <td><%= form.label :genre %></td>
+    <td><%= form.text_field :genre, id: :artist_genre %></td>
+  </tr>
+</table>
 
   <div class="actions" style="color: black;">
     <%= form.submit %>
   </div>
+
 <% end %>
