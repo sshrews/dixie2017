@@ -10,61 +10,63 @@
 <br />
 
 
-
-
-
 <div class="container">
-  <!-- Example row of columns -->
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="border-bottom: 1px solid #555;">
+
       <h3 class="showDate">Thu May 22</h3>
       <p class="bandPhoto"><%= image_tag('futurekings1.jpg', style: 'border: solid 1px #666;') %></p>
       <div class="bandTitle">The Future Kings</div>
       <div class="bandCover">Free</div>
       <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button" >Band Website &raquo;</a></p>
+
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4" style="border-bottom: 1px solid #555;">
       <h3 class="showDate">Fri May 23</h3>
       <p class="bandPhoto"><%= image_tag('kurt1.jpg', style: 'border: solid 1px #666;') %></p>
       <div class="bandTitle">Kurt Thomas Band</div>
       <div class="bandCover">Free</div>
       <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website  &raquo;</a></p>
+
    </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4" style="border-bottom: 1px solid #555;">
       <h3 class="showDate">Sat May 24</h3>
       <p class="bandPhoto"><%= image_tag('walt1.jpg', style: 'border: solid 1px #666;') %></p>
       <div class="bandTitle" data-toggle="tooltip" title="Hooray!">Psycho DeVilles</div>
       <div class="bandCover">$5</div>
       <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website  &raquo;</a></p>
+
     </div>
   </div>
 </div>
 
+<br />
 
 <div class="container" style="background-color: #444; width: 100%;">
-  <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-8">
 
       <%= render 'googleMap' %>
 
-    <div class="col-md-4">
-      <h3>The Dixie Tavern</h3>
-      <div class="contactInfo">2349 Windy Hill Rd SE #130 <br />
-        Marietta, GA 30067 <br />
-        (770) 690-0090 <br />
-        dixietavernatlanta@gmail.com <br />
-        <div class="social"><%= image_tag('socialBar.png', id: 'socialBar', usemap: '#socialBarMap', style: 'width: 270px; height: 91px;' ) %></div>
+      <div class="col-md-4">
+        <h3>The Dixie Tavern</h3>
+          <div class="contactInfo">2349 Windy Hill Rd SE #130 <br />
+            Marietta, GA 30067 <br />
+            (770) 690-0090 <br />
+            dixietavernatlanta@gmail.com <br />
+              <div class="social"><%= image_tag('socialBar.png', id: 'socialBar', usemap: '#socialBarMap', style: 'width: 270px; height: 91px;' ) %>
+              </div>
+          </div>
+            <map name="socialBarMap" id="socialBarMap">
+              <area  alt="" title="Facebook" href="https://www.facebook.com/dixietavernatlanta/" shape="rect" coords="4,3,86,87" style="outline:none;" target="_self"     />
+              <area  alt="" title="Twitter" href="https://twitter.com/DixieTavernATL" shape="rect" coords="92,2,176,86" style="outline:none;" target="_self"     />
+              <area  alt="" title="Instagram" href="https://www.instagram.com/dixie_tavern_atlanta/" shape="rect" coords="184,2,266,91" style="outline:none;" target="_self"     />
+            </map>
         </div>
-        <map name="socialBarMap" id="socialBarMap">
-          <area  alt="" title="Facebook" href="https://www.facebook.com/dixietavernatlanta/" shape="rect" coords="4,3,86,87" style="outline:none;" target="_self"     />
-          <area  alt="" title="Twitter" href="https://twitter.com/DixieTavernATL" shape="rect" coords="92,2,176,86" style="outline:none;" target="_self"     />
-          <area  alt="" title="Instagram" href="https://www.instagram.com/dixie_tavern_atlanta/" shape="rect" coords="184,2,266,91" style="outline:none;" target="_self"     />
-        </map>
-   </div>
-  </div>
+      </div>
+    </div>
 </div>
 
 <!-- Bootstrap core JavaScript
