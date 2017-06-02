@@ -22,9 +22,9 @@
             <td><%= artist.icon %></td>
             <td><%= artist.website %></td>
             <td><%= artist.genre %></td>
-            <td><%= link_to 'Show', artist, class: 'btn btn-mini btn-success' %></td>
-            <td><%= link_to 'Edit', edit_artist_path(artist), class: 'btn btn-mini btn-warning' %></td>
-            <td><%= link_to 'Destroy', artist, method: :delete, class: 'btn btn-mini btn-danger', data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', artist, class: 'btn btn-mini btn-success', style: 'border: 1px solid black;' %></td>
+            <td><%= link_to 'Edit', edit_artist_path(artist), class: 'btn btn-mini btn-warning', style: 'border: 1px solid black;' %></td>
+            <td><%= link_to 'Destroy', artist, method: :delete, class: 'btn btn-mini btn-danger', style: 'border: 1px solid black;', data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<div class="btn btn-outline-primary"><%= link_to 'New Artist', new_artist_path %></div>
+<div><%= link_to 'New Artist', new_artist_path, class: 'btn btn-mini btn-success', style: 'background-color: white; color: black; width: 200px;'%></div>
