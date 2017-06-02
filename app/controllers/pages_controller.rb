@@ -1,7 +1,9 @@
+
 class PagesController < ApplicationController
+
   def home
-    @artist = Artist.where(:id => 4).first
-    @booger = 'Hey guys'
+    @artists = Artist.where(:genre => 'Country')
+
   end
 
   def about
@@ -12,4 +14,5 @@ class PagesController < ApplicationController
 
   def shows
   end
+
 end
