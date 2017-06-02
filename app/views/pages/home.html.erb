@@ -5,10 +5,12 @@
   <p class="bannerText" style="text-shadow: 0px 0px 10px #000000;">Showcasing Atlanta's Best Local Bands Since 1997</p>
 </div>
 
+<% artist = Artist.where(:genre => 'Rockabilly').first %>
+<%= artist.name %>
+<br />
+<%= artist.genre %>
 
-<% @diddly = Artist.where(genre: 'Rockabilly').pluck(:name, :genre) %>
-<%= @diddly[0] %><br />
-<%= @diddly.join() %>
+
 
 <div class="container">
   <!-- Example row of columns -->
