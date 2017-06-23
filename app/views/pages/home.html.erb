@@ -18,12 +18,33 @@
                     </p>
 
                     <div class="bandTitle">
-                        <%= event.name %><br />
+                        <% if event.name == "" %>
+                            
+                        <% else %>
+                            <%= event.name %><br />
+                        <% end %>
+
                         <%= event.artist1 %>
-                        <%= event.artist2 %>
+                        
+                        <% if event.artist2 == "" %>
+                            
+                        <% else %>
+                            + <%= event.artist2 %>
+                        <% end %>   
                     </div>
                     
-                    <div class="bandCover"><%= event.cover || "Free Show" %></div>
+
+                        <!-- p><%= event.cover || "Free Show" %></p -->
+
+                    <div class="bandCover">
+                        <% if !event.cover %>
+                            "Free Show"
+                        <% else %>
+                            $<%= event.cover %> 
+                            
+                        <% end %>
+                    </div>
+                    
                     <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website &raquo;</a></p>
                  
                  </div>   
