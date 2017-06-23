@@ -6,11 +6,31 @@
 
 
 
+    <div class="container">
+        <div class="row">
+            <% @events.each do |event| %>
+                <div class="col-md-4" style="border-bottom: 1px solid #555;">
+                    
+                    <h3 class="showDate"><%= event.date.strftime('%a %B %d') %></h3>
+                    
+                    <p class="bandPhoto">
+                        <%= image_tag('futurekings1.jpg', style: 'border: solid 1px #666;') %>
+                    </p>
 
-<% @artists.each do |artist| %>
+                    <div class="bandTitle">
+                        <%= event.name %><br />
+                        <%= event.artist1 %>
+                        <%= event.artist2 %>
+                    </div>
+                    
+                    <div class="bandCover"><%= event.cover || "Free Show" %></div>
+                    <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website &raquo;</a></p>
+                 
+                 </div>   
+            <% end %>
+        </div>
+    </div>      
 
-<%= artist.name %>
-<% end %>
 
 
     <div class="container">

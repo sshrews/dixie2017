@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-06-22 23:08:03
+  name: MyString
+  artist1: MyString
+  artist2: MyString
+  cover: 1
+
+two:
+  date: 2017-06-22 23:08:03
+  name: MyString
+  artist1: MyString
+  artist2: MyString
+  cover: 1
