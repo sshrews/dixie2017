@@ -46,16 +46,55 @@ body {
 // THREE SHOWS ON FRONT PAGE
 //------------------------------------------------------------------------------
 
+.stretch_it{
+    white-space: nowrap;
+}
+
+.justify{
+    text-align:justify;
+}
+
+.one{font-size:10px;}
+.two{font-size:20px;}
+.three{font-size:30px;}
+.four{font-size:40px;}
+
+.eventContainer {
+  //visibility: hidden;
+}
+
 .bandTitle {
+  width: 240px;
+  background: black;
   text-align: center;
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+  left: 28px;
 
 }
 
-.showDate {
+.weekDay {
+  width: 240px;
   text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  position: relative;
+  left: 28px;
 
 }
+
+.monthDay {
+  width: 240px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  left: 28px;
+
+
+}
+
 
 .bandPhoto {
   text-align: center;
