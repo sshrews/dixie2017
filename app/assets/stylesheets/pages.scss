@@ -69,8 +69,8 @@ body {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
-  position: relative;
-  left: 28px;
+  //position: relative;
+  //  left: 62px;
 
 }
 
@@ -80,7 +80,7 @@ body {
   font-size: 36px;
   font-weight: 800;
   position: relative;
-  left: 28px;
+  left: 62px;
 
 }
 
@@ -90,7 +90,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   position: relative;
-  left: 28px;
+  left: 62px;
 
 
 }
@@ -131,6 +131,64 @@ body {
   padding-top: 10px;
 
 }
+
+
+//------------------------------------------------------------------------------
+// SHOWS
+//------------------------------------------------------------------------------
+
+
+.showContainer{
+  padding-top: 18px;
+  padding-left: 6px;
+  padding-bottom: 16px;
+
+}
+
+.showName {
+  font-size: 22px;
+
+}
+
+.showArtist1 {
+  font-size: 16px;
+  margin-top: -12px;
+
+}
+
+.showArtist2 {
+  font-size: 16px;
+  margin-top: -16px;
+
+}
+
+.showDate {
+  font-size: 16px;
+  margin-top: -10px;
+
+}
+
+.showCover {
+  font-size: 11px;
+  margin-top: -14px;
+
+
+}
+
+
+//------------------------------------------------------------------------------
+// ABOUT
+//------------------------------------------------------------------------------
+
+.aboutContainer{
+  font-size: 18px;
+  padding-top: 18px;
+  padding-left: 6px;
+  padding-bottom: 16px;
+
+}
+
+
 
 //------------------------------------------------------------------------------
 // TABLES AND FORMS
