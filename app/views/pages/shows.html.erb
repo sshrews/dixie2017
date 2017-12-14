@@ -1,4 +1,33 @@
 <div class="container">
 
   <h1>Shows</h1>
+
+
+  	<div class="showContainer">
+  		<% @events.each do |event| %>
+			
+  			<div> 
+  				<p class="showName"><%= event.name.upcase %></p>
+  				<p class="showArtist1"><%= event.artist1.upcase %></p>
+				<p class="showArtist2"><%= event.artist2.upcase %></p>
+				<!-- p class="showDate"><%= event.date.strftime('%A, %B %-d %-I:%M %p') %></p -->
+				<p class="showDate"><%= event.date.strftime('%A, %B %-d') %><br />
+	       							<%= event.date.strftime('%-I:%M %p') %></p>
+	       		<!-- %= event.date.strftime('%B %d').upcase % -->
+	        
+	        </div>             
+	                 
+
+	                    <div class="showCover">
+	                        <% if event.cover == 0 %>
+	                            Free Show
+	                        <% else %>
+	                            $<%= event.cover %>
+	                        <% end %>   
+	                    </div>
+	        <br -->            
+	    <% end %>                
+
+	</div>	
+
 </div>

@@ -46,16 +46,55 @@ body {
 // THREE SHOWS ON FRONT PAGE
 //------------------------------------------------------------------------------
 
+.stretch_it{
+    white-space: nowrap;
+}
+
+.justify{
+    text-align:justify;
+}
+
+.one{font-size:10px;}
+.two{font-size:20px;}
+.three{font-size:30px;}
+.four{font-size:40px;}
+
+.eventContainer {
+  //visibility: hidden;
+}
+
 .bandTitle {
+  width: 240px;
+  background: black;
   text-align: center;
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  //position: relative;
+  //  left: 62px;
 
 }
 
-.showDate {
+.weekDay {
+  width: 240px;
   text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  position: relative;
+  left: 62px;
 
 }
+
+.monthDay {
+  width: 240px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  left: 62px;
+
+
+}
+
 
 .bandPhoto {
   text-align: center;
@@ -92,6 +131,64 @@ body {
   padding-top: 10px;
 
 }
+
+
+//------------------------------------------------------------------------------
+// SHOWS
+//------------------------------------------------------------------------------
+
+
+.showContainer{
+  padding-top: 18px;
+  padding-left: 6px;
+  padding-bottom: 16px;
+
+}
+
+.showName {
+  font-size: 22px;
+
+}
+
+.showArtist1 {
+  font-size: 16px;
+  margin-top: -12px;
+
+}
+
+.showArtist2 {
+  font-size: 16px;
+  margin-top: -16px;
+
+}
+
+.showDate {
+  font-size: 16px;
+  margin-top: -10px;
+
+}
+
+.showCover {
+  font-size: 11px;
+  margin-top: -14px;
+
+
+}
+
+
+//------------------------------------------------------------------------------
+// ABOUT
+//------------------------------------------------------------------------------
+
+.aboutContainer{
+  font-size: 18px;
+  padding-top: 18px;
+  padding-left: 6px;
+  padding-bottom: 16px;
+
+}
+
+
 
 //------------------------------------------------------------------------------
 // TABLES AND FORMS

@@ -7,12 +7,14 @@ class PagesController < ApplicationController
   end
 
   def about
+
   end
 
   def food
   end
 
   def shows
+    @events = Event.where('date > ?', Date.today).order('date ASC')
   end
 
 end

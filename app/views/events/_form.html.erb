@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :date %>
-    <%= form.datetime_select :date, id: :event_date %>
+    <%= form.datetime_select :date, id: :event_date, :ampm => true, :minute_step => 30 %>
   </div>
 
   <div class="field">
@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :cover %>
-    <%= form.number_field :cover, id: :event_cover %>
+    <%= form.number_field :cover, id: :event_cover, :input_html => { :value => '0' } %>
   </div>
 
   <div class="actions">
