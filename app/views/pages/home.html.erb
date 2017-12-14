@@ -12,28 +12,31 @@
                 <div class="col-md-4 eventContainer" style="border-bottom: 1px solid #555;">
                     
                     
-
-                    <div class="stretch weekDay"><%= event.date.strftime('%A').upcase %></div> 
-                    <div class="stretch monthDay"><%= event.date.strftime('%B %d').upcase %></div> 
+                    <div class="showContainer">
                     
-                    <p class="bandPhoto">
-                        <%= image_tag('futurekings1.jpg', style: 'border: solid 1px #666;') %>
-                    </p>
+                        <div class="stretch weekDay"><%= event.date.strftime('%A').upcase %></div> 
+                        <div class="stretch monthDay"><%= event.date.strftime('%B %d').upcase %></div> 
+                        
+                        <p class="bandPhoto">
+                            <%= image_tag('futurekings1.jpg', style: 'border: solid 1px #666;') %>
+                        </p>
 
 
-                    <div class="stretch bandTitle"><%= event.name.upcase %></div>
+                        <div class="stretch bandTitle"><%= event.name.upcase %></div>
+                        
+                        
+
+                        <div class="bandCover">
+                            <% if event.cover == 0 %>
+                                No Cover
+                            <% else %>
+                                $<%= event.cover %>
+                            <% end %>   
+                        </div>
+
+                        <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website &raquo;</a></p>
                     
-                    
-
-                    <div class="bandCover">
-                        <% if event.cover == 0 %>
-                            No Cover
-                        <% else %>
-                            $<%= event.cover %>
-                        <% end %>   
                     </div>
-
-                    <p style="text-align: center;"><a class="btn btn-secondary" href="#" role="button">Band Website &raquo;</a></p>
                  
                  </div> 
                     

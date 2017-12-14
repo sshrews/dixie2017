@@ -63,14 +63,18 @@ body {
   //visibility: hidden;
 }
 
+.showContainer {
+  width: 242px;
+}
+
 .bandTitle {
   width: 240px;
   background: black;
   text-align: center;
   font-size: 22px;
   font-weight: 700;
-  //position: relative;
-  //  left: 62px;
+  position: relative;
+  left: 2px;
 
 }
 
@@ -80,7 +84,7 @@ body {
   font-size: 36px;
   font-weight: 800;
   position: relative;
-  left: 62px;
+  left: 2px;
 
 }
 
@@ -90,7 +94,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   position: relative;
-  left: 62px;
+  left: 2px;
 
 
 }
