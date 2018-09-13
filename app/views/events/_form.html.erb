@@ -36,6 +36,11 @@
     <%= form.number_field :cover, id: :event_cover, :input_html => { :value => '0' } %>
   </div>
 
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_field :photo, id: :event_photo %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

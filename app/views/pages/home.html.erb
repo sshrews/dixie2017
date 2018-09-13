@@ -19,8 +19,15 @@
                             <p class="stretch weekDay"><%= event.date.strftime('%A').upcase %></p> 
                             <div class="stretch monthDay"><%= event.date.strftime('%B %d').upcase %></div> 
                             
-                            <p class="bandPhoto">
+                            <!-- p class="bandPhoto">
                                 <%= image_tag('klaus.jpg', style: 'border: solid 1px #666; height: 240px; width: 240px;') %>
+                            
+                                
+                            </p -->
+
+
+                            <p class="bandPhoto">
+                                <%= image_tag(event.photo, style: 'border: solid 1px #666; height: 240px; width: 240px;') %>
                             
                                 
                             </p>

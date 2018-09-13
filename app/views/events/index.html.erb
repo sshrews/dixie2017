@@ -12,6 +12,7 @@
           <th>Artist1</th>
           <th>Artist2</th>
           <th>Cover</th>
+          <th>Photo</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -24,6 +25,7 @@
             <td><%= event.artist1 %></td>
             <td><%= event.artist2 %></td>
             <td><%= event.cover %></td>
+            <td><%= event.photo %></td>
             <td><%= link_to 'Show', event, class: 'btn btn-mini btn-success', style: 'border: 1px solid black;' %></td>
             <td><%= link_to 'Edit', edit_event_path(event), class: 'btn btn-mini btn-warning', style: 'border: 1px solid black;' %></td>
             <td><%= link_to 'Destroy', event, method: :delete, class: 'btn btn-mini btn-danger', style: 'border: 1px solid black;',data: { confirm: 'Are you sure?' } %></td>
