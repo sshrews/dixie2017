@@ -4,6 +4,8 @@
   var dixie = {lat: 33.904428, lng: -84.486196};
   var map = new google.maps.Map(document.getElementById('googleMap'), {
     zoom: 15,
+    disableDefaultUI: true,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
     center: dixie
   });
   var marker = new google.maps.Marker({
