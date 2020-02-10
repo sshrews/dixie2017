@@ -7,11 +7,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
+#gem 'rails', '~> 5.1.1'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+#gem 'puma', '~> 3.7'
+gem 'puma', '>= 3.12.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 #gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -61,8 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #gems for image management
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'mini_magick', '>= 4.9.4'
 gem 'fog'
 gem 'figaro'
 gem 'unf'
-
